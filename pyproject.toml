@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pretix-tracking-scripts"
+version = "1.0.0"
+description = "Adds scripts for analytics and conversion tracking to pretix."
+authors = ["Kian Cross <kian@kiancross.co.uk>"]
+license = "Apache License 2.0"
+readme = "README.md"
+repository = "https://github.com/kiancross/pretix-tracking-scripts"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pretix = ">=2023.6.0, <2025.0.0"
+django = "^4.2.15"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."pretix.plugin"]
+pretix_tracking_scripts = "pretix_tracking_scripts:PretixPluginMeta"
+
+[tool.isort]
+profile = "black"

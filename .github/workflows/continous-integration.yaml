@@ -1,0 +1,54 @@
+#
+# Copyright (C) 2024 Kian Cross
+#
+
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches: [ master ]
+
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      
+      - uses: Gr1N/setup-poetry@v8
+
+      - name: Get Poetry Cache Directory
+        id: poetry-cache
+        run: echo "dir=$(poetry config cache-dir)" >> $GITHUB_OUTPUT
+
+      - name: Restore Poetry Cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.poetry-cache.outputs.dir }}
+          key: poetry-${{ runner.os }}-${{ hashFiles('**/pyproject.toml') }}
+          restore-keys: |
+            poetry-${{ runner.os }}-
+      
+      - name: Install Dependencies
+        run: poetry install
+
+      - name: Check Import Order
+        run: poetry run isort -c .
+      
+      - name: Check Code Style
+        run: poetry run black --check .
+      
+      - name: Build Package
+        run: poetry build
+      
+      - name: Publish Package
+        if: github.event_name == 'release'
+        run: poetry publish -u __token__ -p ${{ secrets.PYPI_API_KEY }}
