@@ -148,6 +148,7 @@ def process_response_signal(sender, request, response, **kwargs):
                 "script-src": ["https://connect.facebook.net"],
                 "connect-src": ["https://www.facebook.com/tr/"],
                 "img-src": ["https://www.facebook.com"],
+                "frame-src": ["https://www.facebook.com"],
             },
         )
 
