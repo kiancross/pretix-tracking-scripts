@@ -15,6 +15,9 @@ django = "^4.2.15"
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
 isort = "^5.13.2"
+pytest = "^8.3.4"
+pytest-django = "^4.9.0"
+coverage = "^7.6.10"
 
 [build-system]
 requires = ["poetry-core"]
@@ -25,3 +28,6 @@ pretix_tracking_scripts = "pretix_tracking_scripts:PretixPluginMeta"
 
 [tool.isort]
 profile = "black"
+
+[tool.pytest.ini_options]                                                           
+DJANGO_SETTINGS_MODULE = "pretix.testutils.settings"
