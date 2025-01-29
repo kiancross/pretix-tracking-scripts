@@ -2,6 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/pretix-tracking-scripts.svg)](https://pypi.org/project/pretix-tracking-scripts/)
 [![License](https://img.shields.io/github/license/kiancross/pretix-tracking-scripts)](https://github.com/kiancross/pixy/blob/master/LICENSE)
+[![codecov](https://codecov.io/gh/kiancross/pretix-tracking-scripts/graph/badge.svg?token=PHpYdVTJ3H)](https://codecov.io/gh/kiancross/pretix-tracking-scripts)
 
 This plugin for [pretix](https://github.com/pretix/pretix) enables the addition of tracking scripts, including [Google Analytics](https://developers.google.com/analytics) and [Meta Pixel](https://www.facebook.com/business/tools/meta-pixel), to your store. It supports cookie consent but does not hide sensitive URLs, unlike the [official pretix solution](https://behind.pretix.eu/2019/02/02/trackers/).
 
@@ -47,4 +48,12 @@ To automate code styling, run the following commands:
 ```bash
 poetry run isort .
 poetry run black .
+```
+
+### Automated Testing
+
+To execute the automated tests, run the following command:
+
+```bash
+poetry run py.test tests
 ```
