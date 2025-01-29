@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pretix-tracking-scripts"
-version = "1.0.0"
+version = "1.0.1"
 description = "Adds scripts for analytics and conversion tracking to pretix."
 authors = ["Kian Cross <kian@kiancross.co.uk>"]
 license = "Apache License 2.0"
