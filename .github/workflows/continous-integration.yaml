@@ -45,10 +45,21 @@ jobs:
       
       - name: Check Code Style
         run: poetry run black --check .
+
+      - name: Run Tests
+        run: poetry run coverage run --include 'pretix_tracking_scripts/*' -m pytest tests
       
+      - name: Generage Code Coverage Report
+        run: poetry run coverage xml
+
+      - name: Upload Code Coverage Report
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Build Package
         run: poetry build
-      
+
       - name: Publish Package
         if: github.event_name == 'release'
         run: poetry publish -u __token__ -p ${{ secrets.PYPI_API_KEY }}
