@@ -9,7 +9,7 @@ repository = "https://github.com/kiancross/pretix-tracking-scripts"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pretix = ">=2023.6.0, <2025.0.0"
+pretix = ">=2023.6.0,<2026.0.0"
 django = "^4.2.15"
 
 [tool.poetry.group.dev.dependencies]
