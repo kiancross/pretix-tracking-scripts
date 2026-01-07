@@ -23,6 +23,9 @@ This plugin for [pretix](https://github.com/pretix/pretix) enables the addition 
     
     Tracking scripts are only included when a value is provided.
 
+> [!IMPORTANT]
+> This plugin does not specify any pretix version constraints. It is intended to remain compatible with future pretix releases, and adding explicit version limits would unnecessarily restrict where it can be used. The plugin has been explicitly tested with pretix `2025.10.1`. If you encounter any issues when using it with a later pretix release, please [open an issue](https://github.com/kiancross/pretix-tracking-scripts/issues/new) on this repository.
+
 ## Development
 
  1. Ensure you have a working [pretix development setup](https://docs.pretix.eu/en/latest/development/setup.html).
