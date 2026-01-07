@@ -1,4 +1,4 @@
-# Pretix Tracking Scripts
+# pretix-tracking-scripts
 
 [![PyPI version](https://badge.fury.io/py/pretix-tracking-scripts.svg)](https://pypi.org/project/pretix-tracking-scripts/)
 [![License](https://img.shields.io/github/license/kiancross/pretix-tracking-scripts)](https://github.com/kiancross/pixy/blob/master/LICENSE)
@@ -22,6 +22,9 @@ This plugin for [pretix](https://github.com/pretix/pretix) enables the addition 
      * Enter a Meta Pixel dataset ID.
     
     Tracking scripts are only included when a value is provided.
+
+> [!IMPORTANT]
+> This plugin does not specify any pretix version constraints. It is intended to remain compatible with future pretix releases, and adding explicit version limits would unnecessarily restrict where it can be used. The plugin has been explicitly tested with pretix `2025.10.1`. If you encounter any issues when using it with a later pretix release, please [open an issue](https://github.com/kiancross/pretix-tracking-scripts/issues/new) on this repository.
 
 ## Development
 
