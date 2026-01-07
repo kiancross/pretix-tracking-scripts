@@ -1,4 +1,4 @@
-# Pretix Tracking Scripts
+# pretix-tracking-scripts
 
 [![PyPI version](https://badge.fury.io/py/pretix-tracking-scripts.svg)](https://pypi.org/project/pretix-tracking-scripts/)
 [![License](https://img.shields.io/github/license/kiancross/pretix-tracking-scripts)](https://github.com/kiancross/pixy/blob/master/LICENSE)
