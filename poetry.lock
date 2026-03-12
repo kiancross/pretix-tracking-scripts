@@ -336,18 +336,18 @@ dev = ["freezegun (>=1.0,<2.0)", "pytest (>=6.0)", "pytest-cov"]
 
 [[package]]
 name = "beautifulsoup4"
-version = "4.13.5"
+version = "4.14.3"
 description = "Screen-scraping library"
 optional = false
 python-versions = ">=3.7.0"
 groups = ["main"]
 files = [
-    {file = "beautifulsoup4-4.13.5-py3-none-any.whl", hash = "sha256:642085eaa22233aceadff9c69651bc51e8bf3f874fb6d7104ece2beb24b47c4a"},
-    {file = "beautifulsoup4-4.13.5.tar.gz", hash = "sha256:5e70131382930e7c3de33450a2f54a63d5e4b19386eab43a5b34d594268f3695"},
+    {file = "beautifulsoup4-4.14.3-py3-none-any.whl", hash = "sha256:0918bfe44902e6ad8d57732ba310582e98da931428d231a5ecb9e7c703a735bb"},
+    {file = "beautifulsoup4-4.14.3.tar.gz", hash = "sha256:6292b1c5186d356bba669ef9f7f051757099565ad9ada5dd630bd9de5fa7fb86"},
 ]
 
 [package.dependencies]
-soupsieve = ">1.2"
+soupsieve = ">=1.6.1"
 typing-extensions = ">=4.0.0"
 
 [package.extras]
@@ -2502,20 +2502,20 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "pretix"
-version = "2025.8.3"
+version = "2025.9.4"
 description = "Reinventing presales, one ticket at a time"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "pretix-2025.8.3-py3-none-any.whl", hash = "sha256:893d23cde5683be586c8e292de6db3484b35e8876e8cdbe5c76f3945508f6800"},
-    {file = "pretix-2025.8.3.tar.gz", hash = "sha256:890d7b87805bc0bf6d1382f017f8f117b74b5aa4f174ff9f1de21131e1162a23"},
+    {file = "pretix-2025.9.4-py3-none-any.whl", hash = "sha256:1fc356af9a4b3e2384e324cceb567498dd4157d93c1e52b0a7a90edda85118ce"},
+    {file = "pretix-2025.9.4.tar.gz", hash = "sha256:181fdf46cfb0498dec7c5bb5826a0705c79a8d789fd88e0a5d8977238fc8c87e"},
 ]
 
 [package.dependencies]
 arabic-reshaper = "3.0.0"
 babel = "*"
-BeautifulSoup4 = "==4.13.*"
+BeautifulSoup4 = "==4.14.*"
 bleach = "==6.2.*"
 celery = "==5.5.*"
 chardet = "==5.2.*"
@@ -2561,13 +2561,13 @@ paypalrestsdk = "==1.13.*"
 phonenumberslite = "==9.0.*"
 Pillow = "==11.3.*"
 pretix-plugin-build = "*"
-protobuf = "==6.32.*"
+protobuf = "==6.33.*"
 psycopg2-binary = "*"
 pycountry = "*"
 pycparser = "2.23"
 pycryptodome = "==3.23.*"
 PyJWT = "==2.10.*"
-pypdf = "==6.0.*"
+pypdf = "==6.1.*"
 python-bidi = "==0.6.*"
 python-dateutil = "==2.9.*"
 pytz = "*"
@@ -2577,8 +2577,8 @@ qrcode = "8.2"
 redis = "==6.4.*"
 reportlab = "==4.4.*"
 requests = "==2.32.*"
-sentry-sdk = "==2.38.*"
-sepaxml = "==2.6.*"
+sentry-sdk = "==2.42.*"
+sepaxml = "==2.7.*"
 stripe = "==7.9.*"
 text-unidecode = "==1.*"
 tlds = ">=2020041600"
@@ -2590,7 +2590,7 @@ webauthn = "==2.7.*"
 zeep = "==4.3.*"
 
 [package.extras]
-dev = ["aiohttp (==3.12.*)", "coverage", "coveralls", "fakeredis (==2.31.*)", "flake8 (==7.3.*)", "freezegun", "isort (==6.0.*)", "pep8-naming (==0.15.*)", "potypo", "pytest (==8.4.*)", "pytest-asyncio (>=0.24)", "pytest-cache", "pytest-cov", "pytest-django (==4.*)", "pytest-mock (==3.15.*)", "pytest-sugar", "pytest-xdist (==3.8.*)", "responses"]
+dev = ["aiohttp (==3.13.*)", "coverage", "coveralls", "fakeredis (==2.32.*)", "flake8 (==7.3.*)", "freezegun", "isort (==6.1.*)", "pep8-naming (==0.15.*)", "potypo", "pytest (==8.4.*)", "pytest-asyncio (>=0.24)", "pytest-cache", "pytest-cov", "pytest-django (==4.*)", "pytest-mock (==3.15.*)", "pytest-sugar", "pytest-xdist (==3.8.*)", "responses"]
 memcached = ["pylibmc"]
 
 [[package]]
@@ -2717,21 +2717,22 @@ files = [
 
 [[package]]
 name = "protobuf"
-version = "6.32.1"
+version = "6.33.5"
 description = ""
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "protobuf-6.32.1-cp310-abi3-win32.whl", hash = "sha256:a8a32a84bc9f2aad712041b8b366190f71dde248926da517bde9e832e4412085"},
-    {file = "protobuf-6.32.1-cp310-abi3-win_amd64.whl", hash = "sha256:b00a7d8c25fa471f16bc8153d0e53d6c9e827f0953f3c09aaa4331c718cae5e1"},
-    {file = "protobuf-6.32.1-cp39-abi3-macosx_10_9_universal2.whl", hash = "sha256:d8c7e6eb619ffdf105ee4ab76af5a68b60a9d0f66da3ea12d1640e6d8dab7281"},
-    {file = "protobuf-6.32.1-cp39-abi3-manylinux2014_aarch64.whl", hash = "sha256:2f5b80a49e1eb7b86d85fcd23fe92df154b9730a725c3b38c4e43b9d77018bf4"},
-    {file = "protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl", hash = "sha256:b1864818300c297265c83a4982fd3169f97122c299f56a56e2445c3698d34710"},
-    {file = "protobuf-6.32.1-cp39-cp39-win32.whl", hash = "sha256:68ff170bac18c8178f130d1ccb94700cf72852298e016a2443bdb9502279e5f1"},
-    {file = "protobuf-6.32.1-cp39-cp39-win_amd64.whl", hash = "sha256:d0975d0b2f3e6957111aa3935d08a0eb7e006b1505d825f862a1fffc8348e122"},
-    {file = "protobuf-6.32.1-py3-none-any.whl", hash = "sha256:2601b779fc7d32a866c6b4404f9d42a3f67c5b9f3f15b4db3cccabe06b95c346"},
-    {file = "protobuf-6.32.1.tar.gz", hash = "sha256:ee2469e4a021474ab9baafea6cd070e5bf27c7d29433504ddea1a4ee5850f68d"},
+    {file = "protobuf-6.33.5-cp310-abi3-win32.whl", hash = "sha256:d71b040839446bac0f4d162e758bea99c8251161dae9d0983a3b88dee345153b"},
+    {file = "protobuf-6.33.5-cp310-abi3-win_amd64.whl", hash = "sha256:3093804752167bcab3998bec9f1048baae6e29505adaf1afd14a37bddede533c"},
+    {file = "protobuf-6.33.5-cp39-abi3-macosx_10_9_universal2.whl", hash = "sha256:a5cb85982d95d906df1e2210e58f8e4f1e3cdc088e52c921a041f9c9a0386de5"},
+    {file = "protobuf-6.33.5-cp39-abi3-manylinux2014_aarch64.whl", hash = "sha256:9b71e0281f36f179d00cbcb119cb19dec4d14a81393e5ea220f64b286173e190"},
+    {file = "protobuf-6.33.5-cp39-abi3-manylinux2014_s390x.whl", hash = "sha256:8afa18e1d6d20af15b417e728e9f60f3aa108ee76f23c3b2c07a2c3b546d3afd"},
+    {file = "protobuf-6.33.5-cp39-abi3-manylinux2014_x86_64.whl", hash = "sha256:cbf16ba3350fb7b889fca858fb215967792dc125b35c7976ca4818bee3521cf0"},
+    {file = "protobuf-6.33.5-cp39-cp39-win32.whl", hash = "sha256:a3157e62729aafb8df6da2c03aa5c0937c7266c626ce11a278b6eb7963c4e37c"},
+    {file = "protobuf-6.33.5-cp39-cp39-win_amd64.whl", hash = "sha256:8f04fa32763dcdb4973d537d6b54e615cc61108c7cb38fe59310c3192d29510a"},
+    {file = "protobuf-6.33.5-py3-none-any.whl", hash = "sha256:69915a973dd0f60f31a08b8318b73eab2bd6a392c79184b3612226b0a3f8ec02"},
+    {file = "protobuf-6.33.5.tar.gz", hash = "sha256:6ddcac2a081f8b7b9642c09406bc6a4290128fce5f471cddd165960bb9119e5c"},
 ]
 
 [[package]]
@@ -2942,14 +2943,14 @@ test = ["pretend", "pytest (>=3.0.1)", "pytest-rerunfailures"]
 
 [[package]]
 name = "pypdf"
-version = "6.0.0"
+version = "6.1.3"
 description = "A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "pypdf-6.0.0-py3-none-any.whl", hash = "sha256:56ea60100ce9f11fc3eec4f359da15e9aec3821b036c1f06d2b660d35683abb8"},
-    {file = "pypdf-6.0.0.tar.gz", hash = "sha256:282a99d2cc94a84a3a3159f0d9358c0af53f85b4d28d76ea38b96e9e5ac2a08d"},
+    {file = "pypdf-6.1.3-py3-none-any.whl", hash = "sha256:eb049195e46f014fc155f566fa20e09d70d4646a9891164ac25fa0cbcfcdbcb5"},
+    {file = "pypdf-6.1.3.tar.gz", hash = "sha256:8d420d1e79dc1743f31a57707cabb6dcd5b17e8b9a302af64b30202c5700ab9d"},
 ]
 
 [package.extras]
@@ -3685,14 +3686,14 @@ files = [
 
 [[package]]
 name = "sentry-sdk"
-version = "2.38.0"
+version = "2.42.1"
 description = "Python client for Sentry (https://sentry.io)"
 optional = false
 python-versions = ">=3.6"
 groups = ["main"]
 files = [
-    {file = "sentry_sdk-2.38.0-py2.py3-none-any.whl", hash = "sha256:2324aea8573a3fa1576df7fb4d65c4eb8d9929c8fa5939647397a07179eef8d0"},
-    {file = "sentry_sdk-2.38.0.tar.gz", hash = "sha256:792d2af45e167e2f8a3347143f525b9b6bac6f058fb2014720b40b84ccbeb985"},
+    {file = "sentry_sdk-2.42.1-py2.py3-none-any.whl", hash = "sha256:f8716b50c927d3beb41bc88439dc6bcd872237b596df5b14613e2ade104aee02"},
+    {file = "sentry_sdk-2.42.1.tar.gz", hash = "sha256:8598cc6edcfe74cb8074ba6a7c15338cdee93d63d3eb9b9943b4b568354ad5b6"},
 ]
 
 [package.dependencies]
@@ -3714,6 +3715,7 @@ django = ["django (>=1.8)"]
 falcon = ["falcon (>=1.4)"]
 fastapi = ["fastapi (>=0.79.0)"]
 flask = ["blinker (>=1.1)", "flask (>=0.11)", "markupsafe"]
+google-genai = ["google-genai (>=1.29.0)"]
 grpcio = ["grpcio (>=1.21.1)", "protobuf (>=3.8.0)"]
 http2 = ["httpcore[http2] (==1.*)"]
 httpx = ["httpx (>=0.16.0)"]
@@ -3722,6 +3724,7 @@ huggingface-hub = ["huggingface_hub (>=0.22)"]
 langchain = ["langchain (>=0.0.210)"]
 langgraph = ["langgraph (>=0.6.6)"]
 launchdarkly = ["launchdarkly-server-sdk (>=9.8.0)"]
+litellm = ["litellm (>=1.77.5)"]
 litestar = ["litestar (>=2.0.0)"]
 loguru = ["loguru (>=0.5)"]
 openai = ["openai (>=1.0.0)", "tiktoken (>=0.3.0)"]
@@ -3743,14 +3746,14 @@ unleash = ["UnleashClient (>=6.0.1)"]
 
 [[package]]
 name = "sepaxml"
-version = "2.6.2"
+version = "2.7.0"
 description = "Python SEPA XML implementations"
 optional = false
 python-versions = "*"
 groups = ["main"]
 files = [
-    {file = "sepaxml-2.6.2-py3-none-any.whl", hash = "sha256:2713adcc4e4d7893166382837351e7bd34cefebd9dab702389a1c051e2ee7066"},
-    {file = "sepaxml-2.6.2.tar.gz", hash = "sha256:1f6f747bb4e15a12af1034964424c9cc17481127229e8d95693a5a96a3267561"},
+    {file = "sepaxml-2.7.0-py3-none-any.whl", hash = "sha256:6644f695c66c2bf8f49065d4d7b0814da42140d03292131ec08e09798ad07b5d"},
+    {file = "sepaxml-2.7.0.tar.gz", hash = "sha256:77c6ea8c4ea59e53dcabed1d5d8bb79559a0aac47cf25c8e78b06ff5fef6c2bd"},
 ]
 
 [package.dependencies]
