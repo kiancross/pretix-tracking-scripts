@@ -13,7 +13,7 @@ pretix = "*"
 django = "^4.2.15"
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.10.0"
+black = ">=24.10,<27.0"
 isort = "^5.13.2"
 pytest = "^8.3.4"
 pytest-django = "^4.9.0"
